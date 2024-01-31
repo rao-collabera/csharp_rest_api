@@ -14,3 +14,39 @@ You can monitor the health and performance of your microservices, RabbitMQ, and 
 You can communicate and coordinate with other microservices using RabbitMQ, which allows you to publish, subscribe, and receive events.
 
 You can access, analyze, and enhance data from Microsoft 365 with Graph API.
+
+## Prerequisites
+Microsoft Azure Settings:
+Web Redirect URIs: https://localhost:44371/swagger/oauth2-redirect.html
+
+API / Permissions:-
+Microsoft Graph:
+Calendars.Read => Delegated
+
+Calendars.ReadBasic => Delegated
+
+Contacts.Read => Delegated
+
+Mail.Read => Delegated
+
+Mail.ReadBasic => Delegated
+
+Mail.ReadWrite => Delegated
+
+Mail.Send => Delegated
+
+MailboxSettings.Read => Delegated
+
+Tasks.Read => Delegated
+
+Tasks.ReadWrite => Delegated
+
+People.Read => Delegated
+
+Profile => Delegated
+
+User.Read => Delegated
+
+User.ReadAll => Delegated
+
+Directory Roles => RoleManagement.Read.Directory => Delegated
