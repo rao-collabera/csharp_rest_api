@@ -34,7 +34,7 @@ You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 > [!NOTE]  
 > The JsonRequests, JsonSchemas, and WebApiActions action names should be excluded from the sprepo.json file. These actions are utilized to retrieve data from the SQL server and populate JSON files during the initial setup.
 
-## Prerequisites
+# Prerequisites
 **Microsoft Azure Settings:**
 
 Web Redirect URIs: https://localhost:44371/swagger/oauth2-redirect.html
