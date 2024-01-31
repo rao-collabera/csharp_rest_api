@@ -14,7 +14,7 @@ products:
 description: "Creating a minimal API with .NET Core using Sql Server"
 urlFragment: "csharp-rest-api"
 ---
-# Features:
+# Features
 You can use JSON requests with any capitalization to retrieve JSON responses using SQL Server’s built-in JSON format support, without the need for additional classes or objects.
 
 You can define dynamic actions and handle requests with controllers.
