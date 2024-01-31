@@ -62,3 +62,5 @@ You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 This GitHub repository demonstrates the utilization of SQL Server’s native JSON support: https://github.com/Azure-Samples/azure-sql-db-dotnet-rest-api
 
 This example web application showcases the implementation of the Repository and Unit of Work Patterns within an ASP.NET MVC application: https://learn.microsoft.com/en-us/aspnet/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application
+
+Microsoft Graph API provides unified access to data and intelligence in the Microsoft 365 ecosystem: https://learn.microsoft.com/en-us/graph/sdks/create-requests?tabs=csharp
