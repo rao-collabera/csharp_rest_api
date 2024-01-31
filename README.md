@@ -38,21 +38,20 @@ You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 **Microsoft Azure Settings:**
 - Web Redirect URIs: https://localhost:44371/swagger/oauth2-redirect.html
 
-**API / Permissions:-**
-
-*Microsoft Graph:*
-- Calendars.Read => Delegated
-- Calendars.ReadBasic => Delegated
-- Contacts.Read => Delegated
-- Mail.Read => Delegated
-- Mail.ReadBasic => Delegated
-- Mail.ReadWrite => Delegated
-- Mail.Send => Delegated
-- MailboxSettings.Read => Delegated
-- Tasks.Read => Delegated
-- Tasks.ReadWrite => Delegated
-- People.Read => Delegated
-- Profile => Delegated
-- User.Read => Delegated
-- User.ReadAll => Delegated
-- Directory Roles => RoleManagement.Read.Directory => Delegated (If you want to read directory)
+- **API / Permissions:-**
+	- *Microsoft Graph:*
+		- Calendars.Read => Delegated
+		- Calendars.ReadBasic => Delegated
+		- Contacts.Read => Delegated
+		- Mail.Read => Delegated
+		- Mail.ReadBasic => Delegated
+		- Mail.ReadWrite => Delegated
+		- Mail.Send => Delegated
+		- MailboxSettings.Read => Delegated
+		- Tasks.Read => Delegated
+		- Tasks.ReadWrite => Delegated
+		- People.Read => Delegated
+		- Profile => Delegated
+		- User.Read => Delegated
+		- User.ReadAll => Delegated
+		- Directory Roles => RoleManagement.Read.Directory => Delegated (If you want to read directory)
