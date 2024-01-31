@@ -56,5 +56,5 @@ You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 		- User.ReadAll => Delegated
 		- Directory Roles => RoleManagement.Read.Directory => Delegated (If you want to read directory)
 
-##Credits
+# Credits
 This GitHub repository demonstrates the utilization of SQL Server’s native JSON support: https://github.com/Azure-Samples/azure-sql-db-dotnet-rest-api
