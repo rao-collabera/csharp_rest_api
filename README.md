@@ -14,7 +14,9 @@ products:
 description: "Creating a minimal API with .NET Core using Sql Server"
 urlFragment: "csharp-rest-api"
 ---
-# Features
+# Create a minimal API with .NET Core
+
+## Features
 You can use JSON requests with any capitalization to retrieve JSON responses using SQL Server’s built-in JSON format support, without the need for additional classes or objects.
 
 You can define dynamic actions and handle requests with controllers.
@@ -34,7 +36,7 @@ You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 > [!NOTE]  
 > The JsonRequests, JsonSchemas, and WebApiActions action names should be excluded from the sprepo.json file. These actions are utilized to retrieve data from the SQL server and populate JSON files during the initial setup.
 
-# Prerequisites
+## Prerequisites
 **Microsoft Azure Settings:**
 - Web Redirect URIs: https://localhost:44371/swagger/oauth2-redirect.html
 
@@ -56,5 +58,5 @@ You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 		- User.ReadAll => Delegated
 		- Directory Roles => RoleManagement.Read.Directory => Delegated (If you want to read directory)
 
-# Credits
+## Credits
 This GitHub repository demonstrates the utilization of SQL Server’s native JSON support: https://github.com/Azure-Samples/azure-sql-db-dotnet-rest-api
