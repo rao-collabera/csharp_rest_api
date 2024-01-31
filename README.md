@@ -39,6 +39,7 @@ You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 - Web Redirect URIs: https://localhost:44371/swagger/oauth2-redirect.html
 
 **API / Permissions:-**
+
 *Microsoft Graph:*
 - Calendars.Read => Delegated
 - Calendars.ReadBasic => Delegated
