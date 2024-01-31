@@ -1,0 +1,85 @@
+{
+    "mycmsget_schema": {
+        "getactivity": {
+            "type": "object",
+            "required": [
+                "parameter"
+            ],
+            "properties": {
+                "parameter": {
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": false
+        },
+        "jsonrequests": {
+            "type": "object",
+            "properties": {
+                "parameter": {
+                    "type": [
+                        "integer",
+                        "string"
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "jsonschemas": {
+            "type": "object",
+            "properties": {
+                "parameter": {
+                    "type": [
+                        "integer",
+                        "string"
+                    ]
+                }
+            },
+            "additionalProperties": false
+        },
+        "webapiactions": {
+            "type": "object",
+            "additionalProperties": false
+        }
+    },
+    "mycmspost_schema": {
+        "addactivity": {
+            "type": "object",
+            "required": [
+                "activity_name",
+                "activity_date",
+                "description",
+                "activity_type_id"
+            ],
+            "properties": {
+                "activity_name": {
+                    "type": "string"
+                },
+                "activity_date": {
+                    "type": "string",
+                    "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|1\\d|2\\d|3[01])/(19|20)\\d{2}$"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "activity_type_id": {
+                    "type": "integer"
+                }
+            },
+            "additionalProperties": false
+        },
+        "calendarview": {
+            "type": "object",
+            "properties": {
+                "startdate": {
+                    "type": "string",
+                    "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|1\\d|2\\d|3[01])/(19|20)\\d{2}$"
+                },
+                "enddate": {
+                    "type": "string",
+                    "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|1\\d|2\\d|3[01])/(19|20)\\d{2}$"
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

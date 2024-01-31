@@ -1,0 +1,28 @@
+{
+    "mycmspost_request": {
+        "addactivity": {
+            "activity_name": "test activity",
+            "activity_date": "1/30/2024",
+            "description": "testing ...",
+            "activity_type_id": 1
+        },
+        "calendarview": {
+            "startdate": "1/16/2024",
+            "enddate": "1/16/2024"
+        },
+        "getactivities": {
+            "searchcriteria": "ibm",
+            "activity_types": [
+                "active",
+                "passive"
+            ],
+            "sortcolumn": "activity_id",
+            "sortdirection": "asc",
+            "pageno": 1,
+            "pagesize": 20
+        },
+        "sendmessage": {
+            "msg": "test message"
+        }
+    }
+}

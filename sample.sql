@@ -148,7 +148,7 @@ BEGIN
 	DECLARE @PreFix VARCHAR(50), @SqlStmt NVARCHAR(MAX) = ''
 
 	DECLARE db_cursor CURSOR FOR 
-	SELECT Action_Type FROM dbo.Json_SPs WHERE ISJSON(Json)= 1 GROUP BY Action_Type
+	SELECT Action_Type FROM dbo.Json_SPs WHERE ISJSON([Json])= 1 GROUP BY Action_Type
 
 	OPEN db_cursor  
 	FETCH NEXT FROM db_cursor INTO @PreFix  
@@ -159,7 +159,7 @@ BEGIN
 		SET @SqlStmt = @SqlStmt + ', '
 
 		SET @SqlStmt = @SqlStmt + 'JSON_QUERY((SELECT ' +  STUFF((SELECT ', JSON_QUERY(( ''' + [Json] + ''')) AS [' + Action_Name + ']' FROM Json_SPs 
-		WHERE Action_Type = @PreFix AND ISJSON([Json])= 1 FOR XML PATH('')), 1, 1, '')  + ' FOR JSON PATH, WITHOUT_ARRAY_WRAPPER)) AS ' + @PreFix + '_Schema'
+		WHERE Action_Type = @PreFix AND ISJSON([Json])= 1 FOR XML PATH('')), 1, 1, '')  + ' FOR JSON PATH, WITHOUT_ARRAY_WRAPPER)) AS ' + @PreFix + '_Request'
 
 		FETCH NEXT FROM db_cursor INTO @PreFix 
 	END 
