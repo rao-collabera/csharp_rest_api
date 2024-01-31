@@ -41,7 +41,7 @@ Web Redirect URIs: https://localhost:44371/swagger/oauth2-redirect.html
 
 **API / Permissions:-**
 
-* *Microsoft Graph:* *
+*Microsoft Graph:*
 
 Calendars.Read => Delegated
 
