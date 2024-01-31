@@ -65,4 +65,4 @@ User.Read => Delegated
 
 User.ReadAll => Delegated
 
-Directory Roles => RoleManagement.Read.Directory => Delegated
+Directory Roles => RoleManagement.Read.Directory => Delegated (If you want to read directory)
