@@ -1,4 +1,4 @@
-# csharp_rest_api:
+# Features:
 You can use Json requests with any capitalization and get Json responses in SQL Server's native format, without needing extra classes or objects.
 
 You can define dynamic actions and handle requests with controllers.
