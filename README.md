@@ -1,3 +1,19 @@
+---
+page_type: sample
+languages:
+- csharp
+- tsql
+products:
+- azure
+- dotnet-core
+- azure-key-vault
+- sql-server
+- ocelot-api-gateway
+- rabbitmq
+- graph-api
+description: "Creating a minimal API with .NET Core using Sql Server"
+urlFragment: "csharp-rest-api"
+---
 # Features:
 You can use Json requests with any capitalization and get Json responses in SQL Server's native format, without needing extra classes or objects.
 
