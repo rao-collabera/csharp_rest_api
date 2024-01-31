@@ -1,0 +1,53 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/MyCMS/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MyCMS/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "MyCMS"
+    },
+    {
+      "DownstreamPathTemplate": "/api/METal/{everything}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44375
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/METal/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "METal"
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "MyCMS",
+      "Config": [
+        {
+          "Name": "MyCMS",
+          "Version": "v1",
+          "Url": "https://localhost:44371/swagger/v1/swagger.json"
+        }
+      ],
+      "TransformByOcelotConfig": true
+    },
+    {
+      "Key": "METal",
+      "Config": [
+        {
+          "Name": "METal",
+          "Version": "v1",
+          "Url": "https://localhost:44375/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

@@ -148,7 +148,7 @@ BEGIN
 	DECLARE @PreFix VARCHAR(50), @SqlStmt NVARCHAR(MAX) = ''
 
 	DECLARE db_cursor CURSOR FOR 
-	SELECT Action_Type FROM dbo.Json_SPs WHERE ISJSON([Json])= 1 GROUP BY Action_Type
+	SELECT Action_Type FROM dbo.Json_SPs WHERE ISJSON(Json)= 1 GROUP BY Action_Type
 
 	OPEN db_cursor  
 	FETCH NEXT FROM db_cursor INTO @PreFix  
@@ -167,7 +167,7 @@ BEGIN
 	CLOSE db_cursor  
 	DEALLOCATE db_cursor
 
-	SET @SqlStmt = 'SELECT (SELECT ' + LOWER(@SqlStmt) + ' FOR JSON PATH, WITHOUT_ARRAY_WRAPPER) AS Result'
+	SET @SqlStmt = 'SELECT (SELECT ' + @SqlStmt + ' FOR JSON PATH, WITHOUT_ARRAY_WRAPPER) AS Result'
 
 	EXECUTE sp_executesql @SqlStmt
 END

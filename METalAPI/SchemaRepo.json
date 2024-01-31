@@ -1,0 +1,358 @@
+{
+  "metalget_schema": {
+    "getactivity": {
+      "type": "object",
+      "required": [
+        "parameter"
+      ],
+      "properties": {
+        "parameter": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "jsonrequests": {
+      "type": "object",
+      "properties": {
+        "parameter": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "jsonschemas": {
+      "type": "object",
+      "properties": {
+        "parameter": {
+          "type": [
+            "integer",
+            "string"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "webapiactions": {
+      "type": "object",
+      "additionalProperties": false
+    }
+  },
+  "metalpost_schema": {
+    "addtask": {
+      "type": "object",
+      "required": [
+        "title",
+        "orgid",
+        "contactid",
+        "clientid",
+        "description",
+        "startdatetime",
+        "enddatetime",
+        "reminderid",
+        "timezoneid",
+        "activitytypeid"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "orgid": {
+          "type": "string"
+        },
+        "contactid": {
+          "type": "integer"
+        },
+        "clientid": {
+          "type": "integer"
+        },
+        "opportunityid": {
+          "type": "integer"
+        },
+        "todotype": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string",
+          "minimum": 1,
+          "maximum": 8000
+        },
+        "startdatetime": {
+          "type": "string",
+          "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|1\\d|2\\d|3[01])/(19|20)\\d{2}$"
+        },
+        "enddatetime": {
+          "type": "string",
+          "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|1\\d|2\\d|3[01])/(19|20)\\d{2}$"
+        },
+        "reminderid": {
+          "type": "integer"
+        },
+        "timezoneid": {
+          "enum": [
+            4,
+            6,
+            10,
+            13,
+            15,
+            21,
+            47,
+            48,
+            49,
+            50,
+            51,
+            88,
+            102
+          ]
+        },
+        "rtp": {
+          "type": "string"
+        },
+        "rtb": {
+          "type": "string"
+        },
+        "activitytypeid": {
+          "type": "integer"
+        },
+        "outlookmeetingid": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "bob_clientlist": {
+      "type": "object",
+      "properties": {
+        "sortcolumn": {
+          "enum": [
+            "client_code",
+            "client_name",
+            "assigned_contacts",
+            "active_contacts",
+            "drop_contacts",
+            "totalcontractor",
+            "totalfte",
+            "totalemployees",
+            "totalmeetings",
+            "other_meetings",
+            "lunch_meetings",
+            "ooc_meetings,drop_ytd_meetings",
+            "positions",
+            "submissions",
+            "interviews",
+            "hires",
+            "starts",
+            "fillratio",
+            "sub_to_start",
+            "unique_interview",
+            "reqs",
+            "q1_expected_pos",
+            "q1_expected_reqs",
+            "q2_expected_reqs",
+            "q3_expected_pos",
+            "q4_expected_pos",
+            "q4_expected_reqs",
+            "total_expected_pos",
+            "total_expected_reqs"
+          ]
+        },
+        "sortdirection": {
+          "enum": [
+            "asc",
+            "desc"
+          ]
+        },
+        "days": {
+          "type": "integer"
+        },
+        "assigned": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "bob_meetings": {
+      "type": "object",
+      "properties": {
+        "days": {
+          "type": "integer"
+        },
+        "assigned": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "bob_tasksnew": {
+      "type": "object",
+      "properties": {
+        "days": {
+          "type": "integer"
+        },
+        "assigned": {
+          "type": "boolean"
+        },
+        "pageno": {
+          "type": "integer"
+        },
+        "pagesize": {
+          "type": "integer"
+        },
+        "sortcolumn": {
+          "enum": [
+            "firstmeeting",
+            "lastmeeting",
+            "nextmeeting",
+            "lastreqreceived",
+            "clientname",
+            "fullname"
+          ]
+        },
+        "sortdirection": {
+          "enum": [
+            "asc",
+            "lastmeeting desc"
+          ]
+        },
+        "contactid": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "contactname": {
+          "type": "string"
+        },
+        "clientid": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "clientname": {
+          "type": "string"
+        },
+        "fromdate": {
+          "type": "string",
+          "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|1\\d|2\\d|3[01])/(19|20)\\d{2}$"
+        },
+        "todate": {
+          "type": "string",
+          "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|1\\d|2\\d|3[01])/(19|20)\\d{2}$"
+        },
+        "topmanager": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "bob_updateactivity": {
+      "type": "object",
+      "required": [
+        "contactjournalid",
+        "duedate",
+        "meetingscheduled",
+        "rtb",
+        "rtp",
+        "fte",
+        "cnt",
+        "assignedsalesrepid"
+      ],
+      "properties": {
+        "contactjournalid": {
+          "type": "integer"
+        },
+        "duedate": {
+          "type": "string",
+          "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|1\\d|2\\d|3[01])/(19|20)\\d{2}$"
+        },
+        "meetingscheduled": {
+          "type": "boolean"
+        },
+        "rtb": {
+          "type": "string"
+        },
+        "rtp": {
+          "type": "string"
+        },
+        "fte": {
+          "type": "integer"
+        },
+        "cnt": {
+          "type": "integer"
+        },
+        "assignedsalesrepid": {
+          "type": "string"
+        },
+        "secondarysalesrepid": {
+          "type": "string"
+        },
+        "tertiarysalesrepid": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "calendarview": {
+      "type": "object",
+      "properties": {
+        "startdate": {
+          "type": "string",
+          "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|1\\d|2\\d|3[01])/(19|20)\\d{2}$"
+        },
+        "enddate": {
+          "type": "string",
+          "pattern": "^(0?[1-9]|1[0-2])/(0?[1-9]|1\\d|2\\d|3[01])/(19|20)\\d{2}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "getactivities": {
+      "type": "object",
+      "properties": {
+        "pageno": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 150
+        },
+        "pagesize": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 150
+        },
+        "sortoption": {
+          "type": "string"
+        },
+        "searchcriteria": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "getmanagers": {
+      "type": "object",
+      "properties": {
+        "pageno": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 150
+        },
+        "pagesize": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 150
+        },
+        "sortoption": {
+          "type": "string"
+        },
+        "searchcriteria": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

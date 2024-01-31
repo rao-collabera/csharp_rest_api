@@ -1,0 +1,14 @@
+{
+    "METalGet": {
+        "GetActivity": "jsp_GetActivity",
+        "JsonRequests": "jsp_JsonRequests",
+        "JsonSchemas": "jsp_JsonSchemas",
+        "WebApiActions": "jsp_WebApiActions"
+    },
+    "METalPost": {
+        "AddActivity": "jsp_AddActivity",
+        "CalendarView": "",
+        "GetActivities": "jsp_GetActivities",
+        "SendMessage": ""
+    }
+}

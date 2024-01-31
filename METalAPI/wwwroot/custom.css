@@ -1,0 +1,12 @@
+﻿input[type=checkbox] {
+    width: 20px !important;
+}
+.swagger-ui .scheme-container {
+    background: #fafafa !important;
+    box-shadow: 0 1px 2px 0 #fafafa !important;
+    margin: 0 0 10px !important;
+    padding: 10px 0 !important;
+}
+.swagger-ui .info {
+    margin: 10px 0 !important;
+}
