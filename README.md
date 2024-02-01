@@ -27,7 +27,7 @@ urlFragment: "csharp-rest-api"
 * You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 
 > [!TIP]
-> **JSON Schema** serves multiple purposes, one of which is **validating JSON instances**. These examples will help you make the most of your JSON Schemas: https://json-schema.org/learn/miscellaneous-examples
+> **JSON Schema** serves multiple purposes, one of which is **validating JSON instances**. These examples will help you make the most of your JSON Schemas: [Miscellaneous Examples](https://json-schema.org/learn/miscellaneous-examples)
 
 > [!NOTE]  
 > The JsonRequests, JsonSchemas, and WebApiActions action names should be excluded from the sprepo.json file. These actions are utilized to retrieve data from the SQL server and populate JSON files during the initial setup.
@@ -58,6 +58,6 @@ urlFragment: "csharp-rest-api"
 This project welcomes contributions and suggestions.
 
 ## Credits
-This GitHub repository demonstrates the utilization of SQL Server’s native JSON support: https://github.com/Azure-Samples/azure-sql-db-dotnet-rest-api
+This GitHub repository demonstrates the utilization of SQL Server’s native JSON support: [azure-sql-db-dotnet-rest-api](https://github.com/Azure-Samples/azure-sql-db-dotnet-rest-api)
 
 Thanks to my boss Dhar Patadia (dhar@collabera.com), who is very supportive and innovative, for initiating this project.
