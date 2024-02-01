@@ -11,7 +11,7 @@
             "enddate": "1/16/2024"
         },
         "GetActivities": {
-            "searchCriteria": "IBM",
+            "searchCriteria": "meeting",
             "activity_types": [
                 "active",
                 "passive"

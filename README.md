@@ -33,6 +33,9 @@ You can communicate and coordinate with other microservices using RabbitMQ, whic
 
 You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 
+> [!TIP]
+> **JSON Schema** serves multiple purposes, one of which is **validating JSON instances**. These examples will help you make the most of your JSON Schemas: https://json-schema.org/learn/miscellaneous-examples
+
 > [!NOTE]  
 > The JsonRequests, JsonSchemas, and WebApiActions action names should be excluded from the sprepo.json file. These actions are utilized to retrieve data from the SQL server and populate JSON files during the initial setup.
 

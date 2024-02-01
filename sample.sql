@@ -52,6 +52,7 @@ BEGIN
 		SELECT @Activity_Types =  JSON_QUERY(@Json, '$.activity_types')
 		IF @Activity_Types <> ''
 		BEGIN
+			SET @Activity_Types = REPLACE(@Activity_Types, '''', '''''')
 			SET @Activity_Types = REPLACE(@Activity_Types, '"', '''')
 			SET @Activity_Types = ' AND activity_type  IN (' + SUBSTRING(@Activity_Types, 2, LEN(@Activity_Types) - 2) + ')'
 		END
