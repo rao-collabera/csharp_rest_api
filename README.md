@@ -41,7 +41,7 @@ You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 
 ## Prerequisites
 **Microsoft Azure Settings:**
-- Web Redirect URIs: https://localhost:44371/swagger/oauth2-redirect.html
+- Web Redirect URIs: `https://localhost:44371/swagger/oauth2-redirect.html`
 
 - **API / Permissions:**
 	- *Microsoft Graph:*
