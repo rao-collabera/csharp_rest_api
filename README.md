@@ -17,21 +17,14 @@ urlFragment: "csharp-rest-api"
 # Create a minimal API with .NET Core
 
 ## Features
-You can use JSON requests with any capitalization to retrieve JSON responses using SQL Server’s built-in JSON format support, without the need for additional classes or objects.
-
-You can define dynamic actions and handle requests with controllers.
-
-You can see the Json request samples in the Swagger UI, along with the action methods in a dropdown menu.
-
-You can validate your Json requests with Json schemas to ensure data quality and consistency.
-
-You can use Ocelot API Gateway to streamline the routing and authentication of your requests.
-
-You can monitor the health and performance of your microservices, RabbitMQ, and SQL Servers with Health Checks service.
-
-You can communicate and coordinate with other microservices using RabbitMQ, which allows you to publish, subscribe, and receive events.
-
-You can access, analyze, and enhance data from Microsoft 365 with Graph API.
+* You can use JSON requests with any capitalization to retrieve JSON responses using SQL Server’s built-in JSON format support, without the need for additional classes or objects.
+* You can define dynamic actions and handle requests with controllers.
+* You can see the Json request samples in the Swagger UI, along with the action methods in a dropdown menu.
+* You can validate your Json requests with Json schemas to ensure data quality and consistency.
+* You can use Ocelot API Gateway to streamline the routing and authentication of your requests.
+* You can monitor the health and performance of your microservices, RabbitMQ, and SQL Servers with Health Checks service.
+* You can communicate and coordinate with other microservices using RabbitMQ, which allows you to publish, subscribe, and receive events.
+* You can access, analyze, and enhance data from Microsoft 365 with Graph API.
 
 > [!TIP]
 > **JSON Schema** serves multiple purposes, one of which is **validating JSON instances**. These examples will help you make the most of your JSON Schemas: https://json-schema.org/learn/miscellaneous-examples
