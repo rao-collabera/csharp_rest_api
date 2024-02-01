@@ -1,8 +1,8 @@
-# ![alt text](https://res.collabera.com/favicon.png "Minimal API") Create a minimal API with .NET Core
-
 | page_type  | languages       | products  					      | description                 |
 | :--------: | --------------- | ---------------------------------------------------  | --------------------------- | ---------------------- |
 | sample     | `csharp` `tsql` | `azure` `dotnet-core` `graph-api` `azure-key-vault` `sql-server` `ocelot-api-gateway` `rabbitmq` | Creating a minimal API with .NET Core using Sql Server |
+
+# ![alt text](https://res.collabera.com/favicon.png "Minimal API") Create a minimal API with .NET Core
 
 ## Features
 * You can use JSON requests with any capitalization to retrieve JSON responses using SQL Server’s built-in JSON format support, without the need for additional classes or objects.
