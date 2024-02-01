@@ -1,6 +1,6 @@
 | page_type  | languages       | products  					      | description                 | urlFragment            |
 | :--------: | --------------- | ---------------------------------------------------  | --------------------------- | ---------------------- |
-| sample     | `csharp` `tsql` | `azure` `dotnet-core` `azure-key-vault` `sql-server` `ocelot-api-gateway` `rabbitmq` `graph-api` | Creating a minimal API with .NET Core using Sql Server | `csharp-rest-api` |
+| sample     | `csharp` `tsql` | `azure` `dotnet-core` `azure-key-vault` `sql-server` `graph-api` `ocelot-api-gateway` `rabbitmq` | Creating a minimal API with .NET Core using Sql Server | `csharp-rest-api` |
 # ![alt text](https://res.collabera.com/favicon.png "Minimal API") Create a minimal API with .NET Core
 
 ## Features
