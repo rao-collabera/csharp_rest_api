@@ -27,7 +27,7 @@ namespace METalAPI
         /// <param name="context"></param>
         public void Apply(OpenApiOperation operation, OperationFilterContext context)
         {
-            if (operation.Parameters == null) return;
+            if (operation.Parameters == null || operation.Parameters.Count == 0) return;
             ControllerActionDescriptor actionDescriptor = context.ApiDescription.ActionDescriptor as ControllerActionDescriptor;
             var GetAttribute = context.MethodInfo.GetCustomAttributes(typeof(HttpGetAttribute), true).FirstOrDefault();
             Dictionary<string, object> dict = GetSpJson();
