@@ -69,7 +69,7 @@ namespace METalAPI
         {
             Dictionary<string, object> output = Cache.Get<Dictionary<string, object>>("JsonRequests");
             if (output is not null) return output;
-            output = JsonConvert.DeserializeObject<Dictionary<string, object>>(File.ReadAllText(Directory.GetCurrentDirectory() + @"\RequestRepo.json"), _jsonSettings);
+            output = JsonConvert.DeserializeObject<Dictionary<string, object>>(File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "RequestRepo.json")), _jsonSettings);
             Cache.Set("JsonRequests", output, TimeSpan.FromDays(1));
             return output;
         }
@@ -78,7 +78,7 @@ namespace METalAPI
         {
             Dictionary<string, object> output = Cache.Get<Dictionary<string, object>>("SpJson");
             if (output is not null) return output;
-            output = JsonConvert.DeserializeObject<Dictionary<string, object>>(File.ReadAllText(Directory.GetCurrentDirectory() + @"\SPRepo.json"), _jsonSettings);
+            output = JsonConvert.DeserializeObject<Dictionary<string, object>>(File.ReadAllText(Path.Combine(Directory.GetCurrentDirectory(), "SPRepo.json")), _jsonSettings);
             Cache.Set("SpJson", output, TimeSpan.FromDays(1));
             return output;
         }
