@@ -79,7 +79,7 @@ namespace METalAPI
         {
             JsonNode output = Cache.Get<JsonNode>("JsonSchema");
             if (output is not null) return output;
-            output = JsonNode.Parse(System.IO.File.ReadAllText(System.IO.Directory.GetCurrentDirectory() + @"\SchemaRepo.json"));
+            output = JsonNode.Parse(System.IO.File.ReadAllText(Path.Combine(System.IO.Directory.GetCurrentDirectory(), "SchemaRepo.json")));
             Cache.Set("JsonSchema", output, TimeSpan.FromDays(1));
             return output;
         }
